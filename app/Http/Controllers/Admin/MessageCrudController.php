@@ -62,11 +62,8 @@ class MessageCrudController extends CrudController
     {
         CRUD::setValidation(MessageRequest::class);
 
-        CRUD::field('id');
         CRUD::field('subject');
         CRUD::field('body')->type('textarea');
-        CRUD::field('created_at');
-        CRUD::field('updated_at');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
