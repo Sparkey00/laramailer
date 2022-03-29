@@ -63,7 +63,6 @@ class RecipientCrudController extends CrudController
     {
         CRUD::setValidation(RecipientRequest::class);
 
-        CRUD::field('id');
         CRUD::field('name');
         CRUD::field('email');
         CRUD::field('age');
